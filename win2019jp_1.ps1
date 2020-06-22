@@ -7,3 +7,4 @@ $languagePackPath = $driveLetter + ":\x64\langpacks\Microsoft-Windows-Server-Lan
 lpksetup.exe /i ja-JP /p $languagePackPath /r /s
 Wait-Process -Name lpksetup
 DisMount-DiskImage $downloadPath
+Remove-Item $downloadPath 
